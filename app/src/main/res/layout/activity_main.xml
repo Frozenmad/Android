@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.firegroup.mywifitest.MainActivity">
+
+    <NumberPicker
+        android:id="@+id/pick"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+    </NumberPicker>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pick"
+        android:text="IP address"
+        android:id="@+id/ip"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ip"
+        android:text="Message"
+        android:id="@+id/message"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:id="@+id/host"
+        android:text="enter Host id here" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commit"
+        android:text="commit"
+        android:layout_below="@id/message"
+        android:layout_toEndOf="@id/host"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Server"
+        android:id="@+id/server"
+        android:layout_below="@id/host"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client"
+        android:id="@+id/client"
+        android:layout_below="@id/host"
+        android:layout_toEndOf="@id/server"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show"
+        android:text="show"
+        android:layout_toEndOf="@id/pick"/>
+
+</RelativeLayout>
